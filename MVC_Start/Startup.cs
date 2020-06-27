@@ -54,6 +54,7 @@ namespace MVC_Start
         routes.MapRoute(
             name: "default",
             template: "{controller=Home}/{action=Index}/{id?}");
+          //if the user does not specify the controller, then default is home. Either we take the users method or we run the index action method. the ? means you can accept a null variable.
       });
     }
   }
