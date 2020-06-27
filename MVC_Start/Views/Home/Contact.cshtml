@@ -4,13 +4,7 @@
 
 @model GuestContact
 
-@{
-    ViewData["Title"] = "Contact";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
-
-<p>Hello Guest</p>
+<p> Hello guest</p>
 
 <p>Name: @Model.Name</p>
 <p>Email: @Model.Email</p>
@@ -23,4 +17,6 @@
 
     <button type="submit">Submit</button>
 </form>
+
+<a asp-controller="Home" asp-action="Index" asp-route-id="12">Home page</a>
 
